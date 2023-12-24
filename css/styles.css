@@ -12,19 +12,7 @@ ul {
     list-style: none;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+
 
 /**-----------------HEADER----------------*/
 .logo-studio {
@@ -39,7 +27,7 @@ text-transform: uppercase;
 
 .logo-web {
 color: #4d5ae5;
-font-family: Raleway;
+font-family: Raleway; sans-serif;
 font-size: 18px;
 font-weight: 700;
 line-height: 1.17; 
@@ -68,10 +56,18 @@ letter-spacing: 0.02em;
 .header-adress-link{
 color: #434455;
 font-size: 16px;
+font-style: normal;
 font-weight: 400;
 line-height: 1.5; 
 letter-spacing: 0.02em;
 }
+
+.header-adress:hover,
+.header-adress:focus,
+.header-adress:active{
+    color: #404bbf ;
+}
+
 /**---------------------------------*/
 
 /**-----------------HERO----------------*/
@@ -96,6 +92,12 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 background:  #4D5AE5;
 cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus,
+.hero-btn:active{
+    background: #404BBF;
 }
 /**---------------------------------*/
 
@@ -170,6 +172,7 @@ letter-spacing: 0.02em;
 
 /**-----------------PORTFOLIO----------------*/
 .portfolio {
+    background: #FFFFFF;
 }
 .portfolio-title {
 color:  #2E2F42;
